@@ -4,6 +4,7 @@ var server = express();
 
 server.listen(8080);
 
+// 链式操作
 server.use('/', function (req, res, next) {
   console.log(1);
   next()
